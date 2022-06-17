@@ -1,0 +1,11 @@
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: hotpink;
+}
+
+.js-image {
+    width: 200px;
+    height: 200px;
+}
