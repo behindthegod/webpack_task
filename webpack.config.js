@@ -11,8 +11,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'index.html')
-        })
+            template: path.resolve(__dirname, 'index.html'),
+        }),
+
     ],
     module: {
         rules: [
@@ -35,5 +36,9 @@ module.exports = {
                 type: 'asset/resource',
             },
         ]
-    }
+    },
+    devServer: {
+        port: 8080,
+        open: true,
+    },
 };
